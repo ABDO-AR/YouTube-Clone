@@ -1,0 +1,8 @@
+/* Here will be added or reused librarys */
+.center-items {
+  /* This class is used for centering ant thing with flex display */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}

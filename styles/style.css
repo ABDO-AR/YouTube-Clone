@@ -1,0 +1,243 @@
+/* Importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Our variables */
+:root {
+  /* Colors */
+  --main-color: #202020;
+  /* Font sizes */
+  --def-font-size: 1.6rem;
+  --icons-size: 2.6rem;
+}
+/* Applying designs to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Set default font size to 10px */
+html {
+  font-size: 10px;
+}
+/* Set deault font family to roboto from google fonts */
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+/* Header design */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: var(--main-color);
+}
+/* Headers sub divs design */
+i {
+  color: white;
+}
+header .left-side img {
+  width: 80%;
+}
+header .left-side i {
+  font-size: var(--icons-size);
+  margin-right: 16px;
+}
+header .mid-side {
+  width: 600px;
+}
+header .mid-side form {
+  width: 100%;
+}
+header .mid-side form input {
+  width: 100%;
+  height: 40px;
+  border-radius: 2px 0px 0px 2px;
+  border-color: #313131;
+  border-style: solid;
+  padding-left: 16px;
+  color: white;
+  font-size: var(--def-font-size);
+  border-width: 0.3px;
+  background-color: #121212;
+}
+header .mid-side form input:focus {
+  border-radius: 2px 0px 0px 2px;
+  border-color: #1c62b9;
+  outline: none;
+  border-style: solid;
+  padding-left: 16px;
+  border-width: 0.3px;
+  background-color: #121212;
+}
+header .mid-side form button {
+  width: 60px;
+  height: 40px;
+  border-radius: 0px 2px 2px 0px;
+  border-color: #313131;
+  background-color: #313131;
+  border-style: solid;
+  padding-left: 16px;
+  border-width: 0.3px;
+}
+header .mid-side form button i {
+  font-size: var(--icons-size);
+}
+
+header .mid-side .mic {
+  margin-left: 16px;
+  font-size: var(--icons-size);
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #181818;
+}
+header .right-side i {
+  margin-right: 16px;
+  font-size: var(--icons-size);
+}
+header .right-side img {
+  width: 14%;
+  border-radius: 50%;
+}
+main {
+  background-color: #181818;
+  width: 100%;
+  display: flex;
+  height: calc(100vh - 56px);
+}
+nav {
+  width: 260px;
+  overflow: auto;
+  background-color: var(--main-color);
+  height: calc(100vh - 56px);
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 56px);
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #313131;
+}
+nav > hr {
+  margin-top: 8px;
+  margin-right: 16px;
+}
+.tabs {
+  width: 100%;
+  height: 56px;
+  background-color: var(--main-color);
+}
+.item-active {
+  background-color: #4c4c4c;
+}
+.item {
+  margin-top: 8px;
+  padding: 8px;
+  margin-right: 16px;
+}
+.item i {
+  margin-left: 8px;
+  font-size: var(--icons-size);
+}
+.item img {
+  border-radius: 50%;
+  width: 14%;
+  margin-left: 8px;
+  font-size: var(--icons-size);
+}
+.item a {
+  color: white;
+  text-decoration: none;
+  font-size: var(--def-font-size);
+  font-weight: 400;
+  margin-left: 8px;
+}
+h3 {
+  color: #aaaaaa;
+  margin-left: 16px;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: var(--def-font-size);
+}
+h4 {
+  color: inherit;
+  font-size: var(--def-font-size);
+  font-weight: 200;
+  margin: 8px;
+}
+.tab-active {
+  background-color: white !important;
+  color: black !important;
+  border: none !important;
+}
+.tab {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #4c4c4c;
+  border-radius: 32px;
+  color: white;
+  margin-left: 16px;
+  background-color: #313131;
+}
+/* width */
+::-webkit-scrollbar {
+  border-radius: 16px;
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+.content {
+  display: grid;
+  gap: 16px;
+  margin: 16px;
+  margin-bottom: 0px;
+  overflow: scroll;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+}
+.content div img {
+  width: 300px;
+}
+.content div div img {
+  border-radius: 50%;
+  width: 12%;
+}
+.content div div div {
+  display: flex;
+  margin-top: 0px;
+  margin-left: 16px;
+  flex-direction: column;
+}
+.content div div {
+  margin-top: 8px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+h5 {
+  font-weight: 300;
+  color: white;
+  font-size: calc(var(--def-font-size) - 2.3px);
+}
